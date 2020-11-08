@@ -1,0 +1,12 @@
+---
+ - name: Remove cloud package from Ubuntu OS
+   hosts: all
+   become: true
+   tasks:
+      - name: clean ubuntu
+        apt:
+                autoremove: yes
+                purge: yes
+
+        when: ansible_distribution == "Ubuntu"
+          
