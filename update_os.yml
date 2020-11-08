@@ -1,0 +1,15 @@
+---
+ - hosts: all
+   become: true
+   tasks:
+    - name: update Ubuntu OS
+      apt: 
+        update_cache: yes
+        upgrade: dist
+      when: ansible_distribution == "Ubuntu"
+    - name: update CentOS
+      yum:
+        update_only: yes
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+
