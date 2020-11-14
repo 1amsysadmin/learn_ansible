@@ -2,7 +2,7 @@
  - hosts: all
    become: true
    tasks:
-    - name: update Ubuntu OS
+    - name: update Ubuntu
       apt: 
         update_cache: yes
         upgrade: dist
