@@ -1,3 +1,2 @@
 # learn_ansible
-This is my self learning Ansible notes
-
+This is my self learning Ansible, just for fun !!
